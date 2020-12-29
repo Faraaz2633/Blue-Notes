@@ -60,6 +60,7 @@ nav .logo a{
     border-radius: 5px;
     border: transparent;
     width: 120px;
+    font-family: var(--font-3);
 }
 .btn-search {
     margin: 10px;
@@ -70,6 +71,7 @@ nav .logo a{
     background-size: 200% auto;
     color: white;
     width: 80px;
+    font-family: var(--font-3);
     /* height: 20px; */
     border: 1px;
     box-shadow: 0 0 2px #eee;
@@ -104,6 +106,7 @@ nav .logo a{
 .greeting{
     padding: 1rem 0.5rem;
     color: var(--primary-color);
+    font-size: 23px;
 }
 
 .btn {
@@ -121,6 +124,7 @@ nav .logo a{
     border-radius: 10px;
     display: block;
     cursor: pointer;
+    font-family: var(--font-3);
     background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%)
 }
 
@@ -203,6 +207,12 @@ p.card-content {
     font-family: var(--font-3);
     font-weight: 500;
 }
+
+form{
+    box-shadow:  var(--boxshadow);
+    padding: 0px 15px 5px 15px;
+    border-radius: 5px;
+}
 /* Contact Us Page Ends*/
 
 @media screen and (max-width:425px){
@@ -253,7 +263,7 @@ p.card-content {
     .greeting{
         padding: 1rem 0.5rem 0.7rem 0.5rem;
         color: var(--primary-color);
-        font-size: 22px;
+        font-size: 20px;
     }
     #addtxt, #addtitle{
         padding: 5px;
