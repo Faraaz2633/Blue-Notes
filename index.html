@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUE NOTES</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scipt.js" defer></script>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <div class="left">
+                <div class="logo">
+                    <a href="./index.html">BLUE NOTES</a>
+                </div>
+            </div>
+            <div class="right">
+                <input type="search" id="searchtxt" name="search" placeholder="Type Here" class="input-box"> <button class="btn-search">Search</button>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="add-notes-container">
+            <h2 class="greeting">Welcome to BLUE NOTES</h2>
+            <div class="main-card">
+                <h5 class="heading">Add Title</h5>
+                <input type="text" name="title" id="addtitle" placeholder="Enter Title">
+                <h5 class="heading">Add a Note</h5>
+                <textarea name="notes" id="addtxt" cols="30" rows="3" placeholder="Write Here"></textarea>
+                <button id="addbtn" class="btn">Add Note</button>
+            </div>
+        </div>
+        <hr>
+        <h2 class="greeting">
+            Your Notes
+        </h2>
+        <div id="note-card" class="your-notes-container">
+            <div class="bigcard">
+                <div class="card" id="notesElement"> </div>
+            </div>
+        </div>
+        <div class="contact-developer">
+            <a href="./contact.html">Contact Developer</a>
+        </div>
+    </div> 
+</body>
+
+</html>
