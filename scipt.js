@@ -47,8 +47,6 @@ function shownotes(){
         <p class="card-content">${element.text}</p>
         <button id ="${index}" onClick = "deleteNote(this.id)" class="btn">Delete Note</button>
     </div> `;
-
-
     });
     var nothingtxt =  `Nothing to Show! Use "Add a Note" section above to add notes.`;
     let notesElement = document.getElementById('notesElement');
