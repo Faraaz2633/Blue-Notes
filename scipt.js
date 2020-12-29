@@ -1,6 +1,11 @@
+// Introduction
 console.log("Welcome to BLUE NOTES");
+
 let addbtn = document.getElementById('addbtn');
+
 shownotes();
+
+// The process which happens after we click Add Note
 addbtn.addEventListener('click', function(e){
     let addtxt = document.getElementById('addtxt');
     let notes = localStorage.getItem('notes');
@@ -20,7 +25,11 @@ addbtn.addEventListener('click', function(e){
     addtitle.value = "";
     addtxt.value = "";
     shownotes();
-})
+});
+// Process of Add Note Button Ends
+
+
+// Function to display notes
 function shownotes(){
     let notes = localStorage.getItem('notes');
     
@@ -50,7 +59,12 @@ function shownotes(){
         notesElement.innerText = nothingtxt;
     }
 }
+//Function to Display Notes ends 
 
+
+// The process which happens after we click Delete Note
+
+//Function to Delete Note
 function deleteNote(index){
     let notes = localStorage.getItem("notes");
 
@@ -64,8 +78,9 @@ function deleteNote(index){
     localStorage.setItem("notes", JSON.stringify(notesObj));
     shownotes();
 }
+//Function to Delete Note Ends
 
-
+//The process to Search Notes Starts
 let search = document.getElementById("searchtxt");
 
 search.addEventListener("input", function(){
@@ -74,7 +89,8 @@ search.addEventListener("input", function(){
 
     Array.from(noteCard).forEach(function(element){
         let cardtxt = element.getElementsByTagName("p")[0].innerText.toLowerCase();
-        if(cardtxt.includes(inputval)){
+        let titletxt = element.getElementsByClassName("card-title")[0].innerText.toLowerCase();
+        if((cardtxt.includes(inputval)) || (titletxt.includes(inputval))){
             element.style.display = "block";
         }
         else{
@@ -83,3 +99,4 @@ search.addEventListener("input", function(){
     });
 
 });   
+//The process to Search Notes Ends
